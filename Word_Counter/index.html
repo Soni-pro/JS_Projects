@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <textarea id="words" cols="50" rows="10"></textarea>
+    <br>
+    <p id="showdata"></p>
+    <p id="showwordscount"></p>
+    <br>
+    <button onclick="countwords()">Count Char</button>
+    <script>
+        const countwords = () =>{
+            let noc = document.getElementById('words').value.length;
+            let now = document.getElementById('words').value;
+
+            now = now.match( /\w+/g );
+            
+            document.getElementById('showdata').innerHTML = " The total Characters = " + noc;
+            document.getElementById('showwordscount').innerHTML = " The total Characters = " + now.length;
+        }
+    </script>
+</body>
+</html>
