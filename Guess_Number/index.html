@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="section1" class="container text-center mt-5">
+        <button class="btn btn-warning btn-lg" onclick="generate_number_btn_click()">Generate Number</button>
+    </div>
+
+    <div id="section2" class="container">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <img src="./question-mark.gif" alt=""> /* add question mark ? gif here in src*/
+                
+                <p class="text-danger">
+                    Guess the number between 1 to 6
+                </p>
+
+                <div class="form-group w-25 mx-auto">
+                    <input id="field" type="text" class="form-control" placeholder="Enter here">
+                </div>
+
+                <button class="btn btn-primary btn-sm mt-4" onclick="check_number()">Check</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="text-center container">
+        <div style="width: 250px; height: 250px;" class="tenor-gif-embed img-fluid" data-postid="22777333" data-share-method="host" data-aspect-ratio="1.05611" data-width="100%"><a href="https://tenor.com/view/dice-gif-22777333">Dice GIF</a>from <a href="https://tenor.com/search/dice-gifs">Dice GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <!-- <img class="img-fluid"
+        style="width: 250px;"
+        src="" alt=""/>  -->
+        <h2>Generateing Number...</h2>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
